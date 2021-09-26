@@ -10,5 +10,5 @@ It then runs a backtest on the stocks and calculates returns and losses based on
 
 Follow these steps to use this tool -
 
-    - Install dependencies. `python -m pip install -r requirements.txt`
-    - Run main. `python main.py`
+- Install dependencies. ```python -m pip install -r requirements.txt```
+- Run main. ```python main.py```
