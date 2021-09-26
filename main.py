@@ -35,7 +35,7 @@ for symbol in symbols:
 
     complete_indicators_file.to_csv(f'stocks_indicators/{symbol}.csv', index=False)
 
-print('Indicators are calculated. Would you like to backtest your data against these indicators?(yes/no)\n')
+print('Indicators are calculated. Would you like to backtest your data against these indicators?(yes/no)')
 backtest_data = input()
 if backtest_data=='Yes' or backtest_data=='yes' or backtest_data=='y':
     print('The indicators calculated are:')
