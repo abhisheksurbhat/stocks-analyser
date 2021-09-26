@@ -35,7 +35,8 @@ for symbol in symbols:
 
     complete_indicators_file.to_csv(f'stocks_indicators/{symbol}.csv', index=False)
 
-print('Indicators are calculated. Would you like to backtest your data against these indicators?(yes/no)')
+print('Indicators are calculated.')
+print('Would you like to backtest your data against these indicators?(yes/no)')
 backtest_data = input()
 if backtest_data=='Yes' or backtest_data=='yes' or backtest_data=='y':
     print('The indicators calculated are:')
@@ -44,11 +45,11 @@ if backtest_data=='Yes' or backtest_data=='yes' or backtest_data=='y':
     print('3. Relative Strength Index')
     print('Please provide the option number to use.')
     backtest_strategy = input('Enter the indicator you would like to use for backtesting:\n')
-    if backtest_strategy==1 or backtest_strategy=='1':
+    if backtest_strategy=='1':
         backtest_function(strategy='EOM')
-    elif backtest_strategy==2 or backtest_strategy=='2':
+    elif backtest_strategy=='2':
         backtest_function(strategy='EMA')
-    elif backtest_strategy==3 or backtest_strategy=='3':
+    elif backtest_strategy=='3':
         backtest_function(strategy='RSI')
     else:
         print('You have not provided a valid input. Reverting to default strategy')
